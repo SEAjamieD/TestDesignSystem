@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-chef-design-system": [
+        "dist/ngx-chef-design-system"
+      ],
+      "ngx-chef-design-system/*": [
+        "dist/ngx-chef-design-system/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

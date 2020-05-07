@@ -1,0 +1,16 @@
+button {
+  padding: 10px 20px;
+  background: #CFFFE5;
+  color: #3EB489;
+  font-weight: bold;
+  border: none;
+  border-right: 3px solid #3EB489;
+  cursor: pointer;
+  box-shadow: 3px 3px .5em 0 rgba(0, 0, 0, .11);
+}
+
+button[style="secondary"] {
+  background: #3EB489;
+  color: #CFFFE5;
+    border-right: 3px solid #CFFFE5;
+  }

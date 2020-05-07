@@ -120,6 +120,41 @@
           }
         }
       }
+    },
+    "NgxChefDesignSystem": {
+      "projectType": "library",
+      "root": "projects/ngx-chef-design-system",
+      "sourceRoot": "projects/ngx-chef-design-system/src",
+      "prefix": "NgxChef",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-chef-design-system/tsconfig.lib.json",
+            "project": "projects/ngx-chef-design-system/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-chef-design-system/src/test.ts",
+            "tsConfig": "projects/ngx-chef-design-system/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-chef-design-system/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-chef-design-system/tsconfig.lib.json",
+              "projects/ngx-chef-design-system/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "JamieLibrary"
 }
