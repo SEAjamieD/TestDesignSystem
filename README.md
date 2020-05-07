@@ -1,27 +1,27 @@
-# JamieLibrary
+# TestDesignSystem
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
+## How to use
+1. Clone the repository and npm install
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+`git clone https://github.com/SEAjamieD/TestDesignSystem.git`
+ 
+`cd TestDesignSystem`
+ 
+`npm install`
 
-## Code scaffolding
+2. Open up storybook
+From the top level directory: `npm run storybook`.  This should bring the local storybook version up in the browser
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. To Manipulate the files
+Open a second terminal window.
 
-## Build
+`cd projects/ngx-chef-design-system`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Open your favorite code editor and write away.
 
-## Running unit tests
+## To Build for npm
+1. `cd projects/ngx-chef-design-system`
+2. `ng build NgxChefDesignSystem`
+3. `npm publish` (currently you need access to my npm account for this)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
