@@ -25,3 +25,22 @@ Open your favorite code editor and write away.
 2. `ng build NgxChefDesignSystem`
 3. `npm publish` (currently you need access to my npm account for this)
 
+## To Use in your own project
+In the root of your project, run `npm i ngx-chef-design-system`
+In your base app.module.ts file, 
+```javascript
+import { NgxChefDesignSystemModule } from 'ngx-chef-design-system';
+```
+and add `NgxChefDesignSystemModule` to your imports
+
+Example usage in template:
+```html
+<ngx-chef-button 
+  [buttonText]="saving ? 'Saving...' : 'Save Changes'"
+  [loading]="saving ? true : false" 
+  [disabled]="isDisabled"
+  (click)="handleClick()">
+</ngx-chef-button>
+```
+
+
