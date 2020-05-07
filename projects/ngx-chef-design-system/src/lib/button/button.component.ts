@@ -8,7 +8,9 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
     [attr.disabled]="disabled ? true : null"
     (click)="onClick($event)"
     >
-      <span *ngIf="loading" class="loading"></span>
+      <span
+      [attr.loading]="loading ? true : null"
+      class="loading"></span>
       <span>{{ buttonText }}</span>
     </button>
   `,
