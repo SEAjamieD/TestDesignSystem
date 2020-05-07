@@ -1,5 +1,27 @@
 # NgxChefDesignSystem
 
+## To use in your own project
+In the root of your project, run `npm i ngx-chef-design-system`
+In your base app.module.ts file, 
+```javascript
+import { NgxChefDesignSystemModule } from 'ngx-chef-design-system';
+```
+and add `NgxChefDesignSystemModule` to your imports
+
+Example usage in template:
+```html
+<ngx-chef-button 
+  [buttonText]="saving ? 'Saving...' : 'Save Changes'"
+  [loading]="saving ? true : false" 
+  [disabled]="isDisabled"
+  (click)="handleClick()">
+</ngx-chef-button>
+```
+
+
+
+# To Develop on this package
+
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.14.
 
 ## Code scaffolding
