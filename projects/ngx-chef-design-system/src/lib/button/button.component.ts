@@ -5,8 +5,12 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   template: `
     <button
     [attr.style]="style"
+    [attr.disabled]="disabled ? true : null"
     (click)="onClick($event)"
-    >{{ buttonText }}</button>
+    >
+      <span *ngIf="loading" class="loading"></span>
+      <span>{{ buttonText }}</span>
+    </button>
   `,
   styleUrls: ['./button.component.css']
 })
@@ -14,6 +18,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class NgxChefButtonComponent {
   @Input() buttonText = 'Hello';
   @Input() style = 'primary';
+  @Input() disabled = null;
+  @Input() loading = null;
   @Output() handleClick: EventEmitter<any> = new EventEmitter();
 
   onClick = (e) => {

@@ -25,6 +25,22 @@ export const Secondary = () => ({
   },
 });
 
+export const Disabled = () => ({
+  component: NgxChefButtonComponent,
+  props: {
+    buttonText: "I'm Disabled",
+    disabled: true
+  },
+});
+
+export const withSpinner = () => ({
+  component: NgxChefButtonComponent,
+  props: {
+    buttonText: "Loading...",
+    loading: true
+  }
+})
+
 export const withAction = () => ({
   component: NgxChefButtonComponent,
   props: {

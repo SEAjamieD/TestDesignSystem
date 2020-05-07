@@ -2,6 +2,7 @@ button {
   padding: 10px 20px;
   background: #CFFFE5;
   color: #3EB489;
+  font-size: 14px;
   font-weight: bold;
   border: none;
   border-right: 3px solid #3EB489;
@@ -12,5 +13,30 @@ button {
 button[style="secondary"] {
   background: #3EB489;
   color: #CFFFE5;
-    border-right: 3px solid #CFFFE5;
+  border-right: 3px solid #CFFFE5;
   }
+
+button:disabled {
+  background: #e6e4e4;
+  color: #B8BBBC;
+  border-right: 3px solid #B8BBBC;
+  box-shadow: unset;
+  cursor: not-allowed;
+}
+
+span.loading {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 10px;
+  border: 2px solid #3EB489;
+  border-radius: 50%;
+  border-right-color: transparent;
+  animation: spin .35s infinite linear;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
