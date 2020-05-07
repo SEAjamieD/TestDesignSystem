@@ -7,18 +7,18 @@ export default {
 };
 
 export const Default = () => ({
-  component: ButtonComponent
+  component: NgxChefButtonComponent
 });
 
 export const withText = () => ({
-  component: ButtonComponent,
+  component: NgxChefButtonComponent,
   props: {
     buttonText: "I'm a Button",
   },
 });
 
 export const Secondary = () => ({
-  component: ButtonComponent,
+  component: NgxChefButtonComponent,
   props: {
     buttonText: 'Secondary',
     style: 'secondary'
@@ -26,9 +26,9 @@ export const Secondary = () => ({
 });
 
 export const withAction = () => ({
-  component: ButtonComponent,
+  component: NgxChefButtonComponent,
   props: {
-    buttonText: 'Check the Actions Tab!',
+    buttonText: 'Click me and check the Actions Tab!',
     onClick: action("I've been clicked!")
   },
 });
